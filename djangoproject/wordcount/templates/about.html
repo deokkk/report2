@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<br>
+
+    <div class="container">
+        <br><br><br>
+        <div class="starter-template">
+            <h1> About </h1>
+            <p class="lead">안녕하세요, 이곳은 글자를 세 주는 멋쟁이 사자처럼의 워드카운트 웹페이지입니다. 여기에서 글자를 세세요.</p> 
+            <button class="btn btn-default btn-lg" type="button" onclick=location.href="{%url 'index'%}">
+                    돌아가기
+                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                </button>
+        </div>
+
+    </div><!-- /.container -->
+
+    {% endblock %}

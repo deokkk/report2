@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<br>
+
+    <div class="container">
+        <br><br><br>
+        <div class="starter-template">
+            <h1>당신이 입력한 텍스트는 {{total}} 로 구성되어 있습니다. </h1>
+            <button class="btn btn-default btn-lg" type="button" onclick=location.href="{%url 'index'%}">
+                    다시하기
+                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                </button>
+            <p class="lead"><br>
+                <h2> 입력한 텍스트 : </h2>
+                    {{full}}
+
+                    <h2> 단어 카운트 : </h2>
+                    {% for word, howmany in dictionary%}
+
+                    {{word}} : {{howmany}}
+                    <br>
+                    {%endfor%}
+            </p>
+        </div>
+
+    </div><!-- /.container -->
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<br>
+
+<div class="container">
+    <br><br><br>
+    <div class="starter-template">
+        <h1> 안녕하세요, 여기서 글자를 세세요! </h1>
+        <form class="lead" action="{%url 'result'%}">
+            <textarea cols="40" rows="10" name="fulltext"></textarea>
+            <br>
+            <button type="submit" class="btn btn-default btn-lg">
+                Count!
+                <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+            </button>
+        </form>
+    </div>
+
+</div><!-- /.container -->
+
+{% endblock %}
